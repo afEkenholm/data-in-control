@@ -27,7 +27,7 @@
 	 *
 	 * @param	data-toggle-on-click	The target selector
 	 * @param	data-toggle-classes		A set of classes passed to $.fn.toggleClass
-	 *									Default is 'visible'.
+	 *									Default is 'folded unfolded'.
 	 */
 	function setupToggleOnClick() {
 		$(document).on('click', '*[data-toggle-on-click]', function(e) {
@@ -35,7 +35,7 @@
 				e.preventDefault();
 
 				var targetModal = $(this).attr('data-toggle-on-click'),
-					toggleClasses = $(this).attr('data-toggle-classes') || 'visible';
+					toggleClasses = $(this).attr('data-toggle-classes') || 'folded unfolded';
 				
 				$(targetModal).toggleClass( toggleClasses );
 			} catch (err) {}
