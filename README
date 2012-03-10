@@ -1,0 +1,9 @@
+# Data In Control!
+
+Generic functionality detected and applied by using data attributes on DOM elements. The advantage of using data attributes instead of using classes and/or ids to extend elements with some functionality is that we can provide values with the property.
+
+F.i., if you'd like to toggle a box's visibility you would have to give the trigger a class of .toggler and set its target manually in the markup. This way we get a selector together with a target, a value or whatever.
+
+## Examples:
+
+<div data-toggle-on-click=".toggle-content" data-toggle-classes="folded unfolded">Toggle some content somewhere</div>
